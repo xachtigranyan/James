@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>James</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+	<!-- Popper JS -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+
+	<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+	<!--style css-->
+	<link rel="stylesheet" type="text/css" href="styles/style.css">
+	<!--font-awesome-->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+	<!--Fancybox files-->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.4.2/jquery.fancybox.min.css" />
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.4.2/jquery.fancybox.min.js"></script>
+
+	<!--script file-->
+	<script src="script/script.js"></script>
+</head>
+<body id="portfolio">
+	<nav class="nav_menu" role="navigation">
+		<div id="menuToggle">
+		<!--
+		A fake / hidden checkbox is used as click reciever,
+		so you can use the :checked selector on it.
+		-->
+			<input type="checkbox">
+
+		<!--
+		Some spans to act as a hamburger.
+
+		They are acting like a real hamburger,
+		not that McDonalds stuff.
+		-->
+			<span></span>
+			<span class="larger"></span>
+			<span></span>
+
+		<!--
+		Too bad the menu has to be inside of the button
+		but hey, it's pure CSS magic.
+		-->
+			<ul id="menu" class="text-center">
+				<li class="list-item">
+					<a class="menu-link" href="index.html">
+						Home
+					</a>
+				</li>
+				<li class="list-item">
+					<a class="menu-link" href="about.html">
+						About
+					</a>
+				</li>
+				<li class="list-item">
+					<a class="menu-link" href="skills.html">
+						Skills
+					</a>
+				</li>
+				<li class="list-item">
+					<a class="menu-link" href="Services.html">
+						Services
+					</a>
+				</li>
+				<li class="list-item">
+					<a class="menu-link active" href="portfolio.html">
+						Portfolio
+					</a>
+				</li>
+				<li class="list-item">
+					<a class="menu-link" href="contact.html">
+						Contact
+					</a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+	<header class="absolute-fill">
+		<div class="logo text-center">
+			<a href="index.html" class="text-white"><i class="fab fa-node-js"></i></a>
+		</div>
+		
+	</header>
+	<div class="content-about inner-page-content">
+		<div class="container about-bg mb-5">
+			<div class="page-title pt-3">
+				<h1>
+					Portfolio
+				</h1>
+				<p class="title-border"></p>
+			</div>
+			<div class="portfolio-content">
+				<div class="categories">
+					<ul id="myBtnContainer" class="portfolio-cat">
+						<li>
+							<button class="btns active-btn" onclick="filterSelection('all')">All</button>
+						</li>
+						<li>
+							<button class="btns" onclick="filterSelection('fruit')">fruit</button>
+						</li>
+						<li>
+							<button class="btns" onclick="filterSelection('camera')">camera</button>
+						</li>
+						<li>
+							<button class="btns" onclick="filterSelection('chick')">chick</button>
+						</li>
+						<li>
+							<button class="btns" onclick="filterSelection('flower')">flower</button>
+						</li>
+						<li>
+							<button class="btns" onclick="filterSelection('coffee')">coffee</button>
+						</li>
+					</ul>
+				</div>
+				<div class="row portfolio-box mt-5">
+					<div class="column fruit col-lg-3 pl-0">
+						<a data-fancybox="gallery" href="images/g1.jpg"><img src="images/g1.jpg"></a>
+					</div>
+					<div class="column camera col-lg-3 pl-0">
+						<a data-fancybox="gallery" href="images/g2.jpg"><img src="images/g2.jpg"></a>
+					</div>
+					<div class="column camera col-lg-3 pl-0">
+						<a data-fancybox="gallery" href="images/g3.jpg"><img src="images/g3.jpg"></a>
+					</div>
+					<div class="column fruit col-lg-3 pl-0">
+						<a data-fancybox="gallery" href="images/g4.jpg"><img src="images/g4.jpg"></a>
+					</div>
+					<div class="column chick col-lg-3 pl-0">
+						<a data-fancybox="gallery" href="images/g5.jpg"><img src="images/g5.jpg"></a>
+					</div>
+					<div class="column flower col-lg-3 pl-0">
+						<a data-fancybox="gallery" href="images/g6.jpg"><img src="images/g6.jpg"></a>
+					</div>
+					<div class="column coffee col-lg-3 pl-0">
+						<a data-fancybox="gallery" href="images/g7.jpg"><img src="images/g7.jpg"></a>
+					</div>
+					<div class="column fruit col-lg-3 pl-0">
+						<a data-fancybox="gallery" href="images/g8.jpg"><img src="images/g8.jpg"></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<footer>
+		<p class="copyright">
+			© 2018 Strive. All rights reserved | Design by <a href="#"> W3layouts</a>.
+		</p>
+	</footer>
+</body>
+</html>
